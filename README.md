@@ -8,7 +8,7 @@
 - 구조 관련 패턴 (structural)
 - 행동 관련 패턴 (behavioral)
 
-### Singleton Pattern ([link]())
+### Singleton Pattern ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/creational/singleton))
 
 인스턴스를 한개만 제공하는 클래스
 
