@@ -28,7 +28,7 @@
 
 구체적으로 어떤 인스턴스를 만들지를 서브클래스가 정의
 
-<img src="/img/factory-method-uml.png" width="750px">
+<img src="/design-pattern/img/factory-method-uml.png" width="750px">
 
 **적용시 장단점**
 
