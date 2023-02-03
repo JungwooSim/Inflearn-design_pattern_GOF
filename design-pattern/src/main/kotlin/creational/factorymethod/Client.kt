@@ -1,12 +1,11 @@
 package creational.factorymethod
 
 fun main() {
+  print(WhiteShipFactory(), "WhiteShip", "aa@gmail.com")
+  print(BlackShipFactory(), "BlackShip", "aa@gmail.com")
+}
 
-  val whiteShipFactory = WhiteShipFactory()
-  val whiteShip: Ship = whiteShipFactory.orderShip("WhiteShip", "aa@gmail.com")
+fun print(shipFactory: ShipFactory, name: String, email: String) {
+  val whiteShip: Ship = shipFactory.orderShip(name, email)
   println(whiteShip.toString())
-
-  val blackShipFactory = BlackShipFactory()
-  val blackShip: Ship = blackShipFactory.orderShip("BlackShip", "aa@gmail.com")
-  println(blackShip.toString())
 }

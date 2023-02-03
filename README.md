@@ -21,3 +21,25 @@
 
 - Java 의 Runtime Class
 - Spring 의 Bean (Default 설정일 경우)
+
+-
+
+### Factory Method  ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/creational/factorymethod))
+
+구체적으로 어떤 인스턴스를 만들지를 서브클래스가 정의
+
+<img src="/img/factory-method-uml.png" width="750px">
+
+**적용시 장단점**
+
+- 장점
+    - Loose Coupling 하게 개발이 가능하므로, OCP(Open Closed Principle) 원칙을 지키며 개발 가능
+- 단점
+    - class 가 많아질 수 있다
+
+**사용중인 예제**
+
+- Simple Factory Pattern(단순한 팩토리 패턴)
+    - 매게변수의 값에 따라 또는 메소드에 따라 각기 다른 인스턴스를 리턴하는 단순한 버전의 팩토리 패턴
+- Spring 에서의 BeanFactory
+    - Object 타입의 Product 를 만드는 BeanFactory
