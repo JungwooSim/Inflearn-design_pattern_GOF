@@ -22,8 +22,6 @@
 - Java 의 Runtime Class
 - Spring 의 Bean (Default 설정일 경우)
 
--
-
 ### Factory Method  ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/creational/factorymethod))
 
 구체적으로 어떤 인스턴스를 만들지를 서브클래스가 정의
@@ -43,3 +41,26 @@
     - 매게변수의 값에 따라 또는 메소드에 따라 각기 다른 인스턴스를 리턴하는 단순한 버전의 팩토리 패턴
 - Spring 에서의 BeanFactory
     - Object 타입의 Product 를 만드는 BeanFactory
+
+-
+
+### Abstract Factory
+
+서로 관련있는 여러 객체를 만들어주는 인터페이스
+
+구체적으로 어떤 클래스의 인스턴스를(concrete product) 사용하는지 감출 수 있다.
+
+<img src="/design-pattern/img/abstract-factory-uml.png" width="750px">
+
+**장단점**
+
+- Factory Method 과 같다.
+
+**Abstract Factory 와 Factory Method 차이점**
+
+- 관점의 차이
+  - Factory Method : 팩토리를 구현하는 방법에 초점이 맞추어져 있다.
+  - Abstract Factory : 팩토리를 사용하는 방법에 초점이 맞추어져 있다.
+- 목적의 차이
+  - Factory Method 는 구체적인 객체 생성 과정을 하위 또는 구체적인 클래스로 옮기는 것이 목적이다
+  - 추상 팩토리 패턴은 관련있는 여러 객체를 구체적인 클래스에 의존하지 않고 만들 수 있게하는 것이 목적이다
