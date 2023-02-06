@@ -44,7 +44,7 @@
 
 -
 
-### Abstract Factory
+### Abstract Factory ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/creational/abstract_factory))
 
 서로 관련있는 여러 객체를 만들어주는 인터페이스
 
@@ -64,3 +64,23 @@
 - 목적의 차이
   - Factory Method 는 구체적인 객체 생성 과정을 하위 또는 구체적인 클래스로 옮기는 것이 목적이다
   - 추상 팩토리 패턴은 관련있는 여러 객체를 구체적인 클래스에 의존하지 않고 만들 수 있게하는 것이 목적이다
+
+### Builder Factory ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/creational/builder))
+
+동일한 프로세스를 거쳐 다양한 구성의 인터페이스를 만드는 방법
+
+<img src="/design-pattern/img/builder-uml.png" width="750px">
+
+**장단점**
+
+- 장점
+  - 객체를 만드는 프로세스를 독립적으로 분리할 수 있다.
+  - 객체를 만드는 과정을 숨길 수 있다.
+- 단점
+  - 빌더 클래스를 인스턴스로 만들어야 한다.
+  - builder 코드는 복잡해질 수 있다.
+
+**사용중인예제**
+
+- Stringbuilder
+- Stream.Builder
