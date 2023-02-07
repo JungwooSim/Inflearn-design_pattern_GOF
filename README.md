@@ -84,3 +84,23 @@
 
 - Stringbuilder
 - Stream.Builder
+
+### Prototype ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/creational/prototype))
+
+기존 인스턴스를 복제하여 새로운 인스턴스를 만드는 방법
+
+복제 기능을 갖추고 있는 기존 인스턴스를 프로토타입으로 사용해 새 인스턴스를 만들 수 있다.
+
+<img src="/design-pattern/img/prototype-uml.png" width="750px">
+
+**장단점**
+
+- 장점
+  - 기존 객체를 복제하는 과정이 새 인스턴스를 만드는 것보다 비용(시간 또는 메모리)적인 면에서 효율적일 수 있다.
+  - 추상적인 타입을 리턴할 수 있다.
+- 단점
+  - 복제한 객체를 만드는 과정 자체가 복잡할 수 있다.
+
+**사용중인예제**
+
+- ArrayList.clone()
