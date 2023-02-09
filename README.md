@@ -8,6 +8,8 @@
 - 구조 관련 패턴 (structural)
 - 행동 관련 패턴 (behavioral)
 
+## Creational Patterns
+
 ### Singleton Pattern ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/creational/singleton))
 
 인스턴스를 한개만 제공하는 클래스
@@ -104,3 +106,33 @@
 **사용중인예제**
 
 - ArrayList.clone()
+
+## Structural Patterns
+
+### Adapter ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/structural/adapter))
+
+기존 코드를 클라이언트가 사용하는 인터페이스의 구현체로 바꿔주는 패턴
+
+클라이언트가 사용하는 인터페이스를 따르지 않는 기존 코드를 재사용할 수 있게 해준다
+
+<img src="/design-pattern/img/adapter-uml-1.png" width="750px">
+
+**예제코드 UML**
+
+<img src="/design-pattern/img/adapter-uml-2.png" width="750px">
+
+**장단점**
+
+- 장점
+  - 기존 코드를 변경하지 않고 원하는 인터페이스 구현체를 만들어 재사용 가능
+  - 기존 코드가 하던 일과 특정 인터페이스 구현체로 변환하는 작업을 각기 다른 클래스로 분리하여 관리할 수 있다
+- 단점
+  - 새 클래스가 생겨 복잡도 상승할 수 있다.
+    - 이를 개선하기 위해 기존 코드가 해당 인터페이스를 구현하도록 수정하는 것이 좋은 선택이 될 수도 있다. (단, 이 경우는 SRP 를 위반할 수 있지만, class 가 간단하다)
+
+**사용중인예제**
+
+- Arrys.list()
+- Collections(←Adapter).enumeration()(←Adaptee)
+- Spring MVC
+  - HandlerAdapter class
