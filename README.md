@@ -156,3 +156,23 @@
 **사용중인예제**
 
 - JDBC
+  - 새로운 DB 추가시 connection 기능과 query 기능
+- Sl4J
+  - logger 의 구현체
+
+### Composite ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/structural/compisite))
+
+그룹 전체와 개별 객체를 동일하게 처리할 수 있는 패턴
+
+클라이언트 입장에서는 “전체” 나 “부분” 모두 동일한 컴포넌트로 인식할 수 있는 계층 구조를 만들수 있다.(Part-Whole Hierachy)
+
+<img src="/design-pattern/img/composite-uml-1.png" width="750px">
+
+**장단점**
+
+- 장점
+  - 복잡한 트리구조를 편리하게 사용 가능
+  - 다형성과 재귀를 활용 가능
+  - 클라이언트 코드를 변경하지 않고 새로운 엘리먼트 타입을 추가할 수 있다
+- 단점
+  - 트리를 만들어야 하므로(공통된 인터페이스 정의 필요) 지나치게 일반화 해야하는 경우도 생길 수 있다
