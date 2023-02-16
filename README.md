@@ -176,3 +176,24 @@
   - 클라이언트 코드를 변경하지 않고 새로운 엘리먼트 타입을 추가할 수 있다
 - 단점
   - 트리를 만들어야 하므로(공통된 인터페이스 정의 필요) 지나치게 일반화 해야하는 경우도 생길 수 있다
+
+### Decorator ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/structural/decorator))
+
+기존 코드를 변경하지 않고 부가 기능을 추가하는 패턴
+
+상속이 아닌 위임을 사용해서 보다 런타임시점에 유연하게 부가 기능을 추가하는 것이 가능하다
+
+<img src="/design-pattern/img/decorator-uml.png" width="750px">
+
+**장단점**
+
+- 장점
+  - 새로운 클래스를 만들지 않고 기존 기능을 조합 가능
+  - 컴파일 타임이 아닌 런타임에 동적으로 기능 변경 가능
+- 단점
+  - 데코레이터를 조합하는 코드가 복잡할 수 있다.
+
+**사용중인예제**
+
+- Spring - HttpServletRequestWrapper class
+- Spring - ServerHttpRequestDecorator class
