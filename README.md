@@ -166,7 +166,7 @@
 
 클라이언트 입장에서는 “전체” 나 “부분” 모두 동일한 컴포넌트로 인식할 수 있는 계층 구조를 만들수 있다.(Part-Whole Hierachy)
 
-<img src="/design-pattern/img/composite-uml-1.png" width="750px">
+<img src="/design-pattern/img/composite-uml.png" width="750px">
 
 **장단점**
 
@@ -197,3 +197,23 @@
 
 - Spring - HttpServletRequestWrapper class
 - Spring - ServerHttpRequestDecorator class
+
+### Facade ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/structural/facade))
+
+복잡한 서브 시스템 의존성을 최소화하는 방법
+
+클라이언트가 사용해야 하는 복잡한 서브 시스템 의존성을 간단한 인터페이스로 추상화 할 수 있다
+
+<img src="/design-pattern/img/facade-uml.png" width="750px">
+
+**장단점**
+
+- 장점
+  - 서브시스템에대한 의존성을 한곳으로 모을수 있다.
+- 단점
+  - 퍼사드 클래스가 서브시스템에 대한 모든 의존성을 갖게 된다.
+
+**사용중인예제**
+
+- Spring - JavaMailSenderImpl()
+- Spring - PlatformTransactionManager()
