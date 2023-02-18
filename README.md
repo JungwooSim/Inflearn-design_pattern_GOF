@@ -217,3 +217,22 @@
 
 - Spring - JavaMailSenderImpl()
 - Spring - PlatformTransactionManager()
+
+### Flyweight ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/structural/flyweight))
+
+객체를 가볍게 만들어 메모리 사용을 줄이는데 사용
+
+자주 변하는 속성과 변하지 않는 속성을 분리하고 재사용하여 메모리 사용을 줄일 수 있다.
+
+<img src="/design-pattern/img/flyweight-uml.png" width="750px">
+
+**장단점**
+
+- 장점
+  - 애플리케이션에서 메모리를 줄일수 있다
+- 단점
+  - 코드의 복잡도가 올라간다.
+
+**사용중인예제**
+
+- Java - Integer.valueOf()
