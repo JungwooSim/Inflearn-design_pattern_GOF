@@ -236,3 +236,24 @@
 **사용중인예제**
 
 - Java - Integer.valueOf()
+
+### Proxy ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/structural/proxy))
+
+특정 객체에 접근을 제어하거나 기능을 추가할 수 있는 패턴
+
+초기화 지연, 접근 제어, 로깅, 캐싱 등 다양하게 응용하여 사용할 수 있다
+
+<img src="/design-pattern/img/proxy-uml.png" width="750px">
+
+**장단점**
+
+- 장점
+  - 기존 코드를 변경하지 않고 새로운 기능을 추가할 수 있다
+  - 기존 코드가 해야하는 일만 유지 가능
+  - 기능 추가, 초기화 지연 등으로 다양하게 활용 가능
+- 단점
+  - 코드의 복잡도가 올라감
+
+**사용중인예제**
+
+- Spring - AOP
