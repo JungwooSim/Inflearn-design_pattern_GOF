@@ -257,3 +257,24 @@
 **사용중인예제**
 
 - Spring - AOP
+
+## Behavioral Patterns
+
+### Chain of Responsibility ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/structural/chain_of_responsibility))
+
+요청을 보내는 쪽(sender)과 요청을 처리하는 쪽(reveiver)의 분리하는 패턴
+
+handler chain 을 사용해서 요청을 처리
+
+<img src="/design-pattern/img/chain_of_responsibility-uml.png" width="750px">
+
+**장단점**
+
+- 장점
+  - SRP 를 유지하며 OCP 가 가능하다.
+- 단점
+  - 디버깅이 어려울 수 있다.
+
+**사용중인예제**
+
+- Java - Servlet 의 Filter
