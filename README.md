@@ -278,3 +278,25 @@ handler chain 을 사용해서 요청을 처리
 **사용중인예제**
 
 - Java - Servlet 의 Filter
+
+### Command ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/structural/command))
+
+요청을 캡슐화하여 invoker 와 receiver 를 분리하는 패턴
+
+요청을 처리하는 방법이 바뀌더라도 호출자의 코드는 변경되지 않는다.
+
+<img src="/design-pattern/img/command-uml.png" width="750px">
+
+**장단점**
+
+- 장점
+  - 기존 코드 변경없이 새로운 command 를 만들 수 있다
+  - receiver 코드가 변경되어도 invoker 코드는 변경되지 않는다
+  - command 객체를 로깅, DB에 저장, 네트워크로 전송하는 등의 다양한 방법으로 활용할 수 있다
+- 단점
+  - 코드가 복잡해지고 클래스가 많아진다
+
+**사용중인예제**
+
+- Java - Executors class
+- Spring - SimpleJdbcInsert
