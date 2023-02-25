@@ -300,3 +300,24 @@ handler chain 을 사용해서 요청을 처리
 
 - Java - Executors class
 - Spring - SimpleJdbcInsert
+
+### Interpreter ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/structural/interpreter))
+
+자주 등장하는 문제를 간단한 언어로 정의하고 재사용하는 패턴
+
+반복되는 문제 패턴을 언어 또는 문법으로 정의하고 확장할 수 있다
+
+<img src="/design-pattern/img/interpreter-uml.png" width="750px">
+
+**장단점**
+
+- 장점
+  - 자주 등장하는 문제 패턴을 언어와 문법으로 정의할 수 있다
+  - 기존 코드를 변경하지 않고 새로운 Expression 을 추가 할 수 있다
+- 단점
+  - 복잡한 문법을 표현하려면 Expression 과 Parser 가 복잡해질수 있다
+
+**사용중인예제**
+
+- Java - Pattern.matches()
+- Spring - Expression class
