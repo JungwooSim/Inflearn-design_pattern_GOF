@@ -321,3 +321,16 @@ handler chain 을 사용해서 요청을 처리
 
 - Java - Pattern.matches()
 - Spring - Expression class
+
+### Iterator
+
+집합 객체 내부 구조를 노출시키지 않고 순회하는 방법을 제공하는 패턴
+
+집합 객체를 순회하는 클라이언트 코드를 변경하지 않고 다양한 순회 방법을 제공할 수 있음
+
+<img src="/design-pattern/img/iterator-uml.png" width="750px">
+
+**사용중인예제**
+
+- Java - Iterator
+- Spring - CompositeIterator
