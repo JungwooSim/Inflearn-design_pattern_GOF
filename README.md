@@ -354,3 +354,22 @@ handler chain 을 사용해서 요청을 처리
 **사용중인예제**
 
 - Spring - DispatcherServlet
+
+### Memento
+
+캡슐화를 유지하면서 객체 내부 상태를 외부에 저장하는 방법
+
+객체 상태를 외부에 저장했다가 해당 상태로 다시 복구할 수 있다.
+
+<img src="/design-pattern/img/memento-uml.png" width="750px">
+
+**장단점**
+
+- 장점
+  - 객체 내부 상태를 외부에 노출하지 않고 memento 하여 상태를 저장할 수 있다.
+- 단점
+  - memento 가 많은 상태를 저장하고 자주 사용한다면 메모리를 관리가 필요하다
+
+**사용중인예제**
+
+- Java - Serializable
