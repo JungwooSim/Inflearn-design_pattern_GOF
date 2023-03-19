@@ -355,7 +355,7 @@ handler chain 을 사용해서 요청을 처리
 
 - Spring - DispatcherServlet
 
-### Memento
+### Memento ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/structural/memento))
 
 캡슐화를 유지하면서 객체 내부 상태를 외부에 저장하는 방법
 
@@ -373,3 +373,26 @@ handler chain 을 사용해서 요청을 처리
 **사용중인예제**
 
 - Java - Serializable
+
+### Observer ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/structural/observer))
+
+다수의 객체가 특정 객체 상태 변화를 감지하고 알림을 받는 패턴
+
+publicsh - subscribe 패턴을 구현할 수 있다
+
+<img src="/design-pattern/img/observer-uml.png" width="750px">
+
+**장단점**
+
+- 장점
+  - 상태를 변경하는 객체와 변경을 감지하는 객체의 관계를 느슨하게 유지할 수 있다
+  - Subject 의 상태 변경을 주기적으로 조회하지 않고 자동으로 감지할 수 있다
+  - 런타임에 옵저버를 추가하거나 제거할 수 있다
+- 단점
+  - 복잡도 증가
+  - 다수의 Observer 객체를 등록 이후 해지 않으면 memory leak 이 발생할 수 있다
+
+**사용중인예제**
+
+- Java - Flow API (리액티브 스트림을 개발할 수 있도록 제공해주는 인터페이스)
+- Spring - IOC 컨테이너
