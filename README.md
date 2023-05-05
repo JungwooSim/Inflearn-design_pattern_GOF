@@ -430,3 +430,27 @@ publicsh - subscribe 패턴을 구현할 수 있다
   - 런타임에 전략을 변경 가능하다
 - 단점
   - 클라이언트 코드가 구체적인 전략을 알아야 한다
+
+### Template Method ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/structural/templatemethod))
+
+알고리즘 구조를 서브 클래스가 확장할 수 있도록 템플릿을 제공하는 방법
+
+추상 클래스는 템플릿을 제공하고 하위 클래스는 구체적인 알고리즘을 제공
+
+<img src="/design-pattern/img/template-method-uml.png" width="750px">
+
+**장단점**
+
+- 장점
+  - 템플릿 코드를 재사용하고 중복 코드를 줄일 수 있다
+  - 템플릿 코드를 변경하지 않고 상속을 받아서 구체적인 알고리즘만 변경할 수 있다
+- 단점
+  - SOLID 에서 LSP 를 위배할 수도 있다
+
+### Template Callback ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/structural/templatemethod))
+
+콜백으로 상속 대신 위임을 사용하는 템플릿 패턴
+
+상속 대신 익명 내부 클래스 또는 람다 표현식을 사용할 수 있다
+
+<img src="/design-pattern/img/template-callback-uml.png" width="750px">
