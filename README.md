@@ -454,3 +454,16 @@ publicsh - subscribe 패턴을 구현할 수 있다
 상속 대신 익명 내부 클래스 또는 람다 표현식을 사용할 수 있다
 
 <img src="/design-pattern/img/template-callback-uml.png" width="750px">
+
+### Visitor ([link](https://github.com/JungwooSim/Inflearn-design_pattern_GOF/tree/main/design-pattern/src/main/kotlin/structural/visitor))
+
+기존 코드를 변경하지 않고 새로운 기능을 추가하는 방법
+
+Double Dispatch 를 활용할 수 있다
+
+<img src="/design-pattern/img/visitor-uml.png" width="750px">
+
+**사용중인예제**
+
+- Java - FileVisitor, AnnotationValueVisitor
+- Spring - BeanDefinitionVisitor
